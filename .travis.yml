@@ -1,12 +1,12 @@
 language: cpp
 compiler: gcc
-dist: zesty
+dist: trusty
 
 before_install:
   - sudo apt-get update -qq
 
 install: 
-  - sudo apt-get install -qq cmake
+  - sudo apt-get install -qq extra-cmake-modules
 
 script: 
   - ./compile
