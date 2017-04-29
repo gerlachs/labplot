@@ -1,12 +1,14 @@
 language: cpp
-compiler: gcc
-dist: trusty
+compiler:
+  - gcc
+  - clang
+os: osx
 
 before_install:
-  - sudo apt-get update -qq
+  - brew update
 
 install: 
-  - sudo apt-get install -qq extra-cmake-modules
+  - brew install fftw
 
 script: 
   - ./compile
