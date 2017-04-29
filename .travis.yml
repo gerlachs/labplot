@@ -1,0 +1,12 @@
+language: cpp
+compiler: gcc
+dist: zesty
+
+before_install:
+  - sudo apt-get update -qq
+
+install: 
+  - sudo apt-get install -qq cmake
+
+script: 
+  - ./compile
